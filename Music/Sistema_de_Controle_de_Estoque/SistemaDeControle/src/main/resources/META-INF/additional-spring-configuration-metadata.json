@@ -1,8 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "spring.web.resources.index-page",
-      "type": "java.lang.String",
-      "description": "Description for spring.web.resources.index-page."
-  }
-] }

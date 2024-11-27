@@ -1,0 +1,62 @@
+# Dependências do Node.js
+/node_modules/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Arquivos temporários e específicos da IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Arquivos de log e outros temporários
+*.log
+*.class
+*.tmp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de compilação
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Outros arquivos de configuração do Git
+.gitattributes
+
+# Spring Boot
+*.war
+*.jar
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+
