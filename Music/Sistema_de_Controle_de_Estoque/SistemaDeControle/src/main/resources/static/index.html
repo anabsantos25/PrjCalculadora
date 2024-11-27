@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Meu Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Estoque</h1>
+    </header>
+
+    <table id="estoque-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Qtd</th>
+                <th>Preço</th>
+                <th>Fornecedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os produtos serão inseridos aqui -->
+        </tbody>
+    </table>
+
+    <div class="buttons">
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+        <button onclick="alterarProduto()">Alterar Produto</button>
+        <button onclick="excluirProduto()">Excluir Produto</button>
+    </div>
+
+    <!-- Formulário de Adicionar Produto -->
+    <div id="form-adicionar" style="display: none;">
+        <h2>Adicionar Produto</h2>
+        <form onsubmit="salvarProduto(event)">
+            <label for="id">ID:</label>
+            <input type="number" id="id" required><br>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required><br>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" required><br>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" step="0.01" required><br>
+
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" id="fornecedor" required><br>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
